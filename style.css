@@ -1,0 +1,170 @@
+﻿/* -------------------- */
+/* RESET & BASE STYLES  */
+/* -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: 0.3s;
+}
+
+    a:hover {
+        color: #005599;
+    }
+
+/* -------------------- */
+/* HEADER & NAVIGATION  */
+/* -------------------- */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+nav {
+    background: #34495e;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+            nav ul li a {
+                color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
+            }
+
+                nav ul li a:hover {
+                    background: #0077cc;
+                }
+
+/* -------------------- */
+/* MAIN LAYOUT          */
+/* -------------------- */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sidebar {
+    flex: 1;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.main-content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* -------------------- */
+/* TYPOGRAPHY & BUTTONS */
+/* -------------------- */
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+button, .btn {
+    display: inline-block;
+    background: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    button:hover, .btn:hover {
+        background: #005599;
+    }
+
+/* -------------------- */
+/* FOOTER               */
+/* -------------------- */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN    */
+/* -------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
