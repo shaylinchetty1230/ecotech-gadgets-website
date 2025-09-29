@@ -1,5 +1,4 @@
-﻿
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +14,6 @@ body {
     margin: 0;
 }
 
-
 a {
     text-decoration: none;
     color: #0077cc;
@@ -25,7 +23,6 @@ a {
     a:hover {
         color: #005599;
     }
-
 
 header {
     background: #2c3e50;
@@ -64,7 +61,6 @@ nav {
                     background: #0077cc;
                 }
 
-
 .container {
     display: flex;
     gap: 20px;
@@ -88,6 +84,9 @@ nav {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* -------------------- */
+/* TYPOGRAPHY & BUTTONS */
+/* -------------------- */
 h1, h2, h3 {
     font-family: 'Segoe UI', sans-serif;
     margin-bottom: 10px;
@@ -113,7 +112,6 @@ button, .btn {
         background: #005599;
     }
 
-
 footer {
     background: #2c3e50;
     color: white;
@@ -123,8 +121,7 @@ footer {
 }
 
 
-
-
+/* Tablet */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -135,7 +132,6 @@ footer {
         text-align: center;
     }
 }
-
 
 @media (max-width: 480px) {
     body {
